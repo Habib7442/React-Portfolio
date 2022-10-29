@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+
+.contact {
+  position: relative;
+  color: inherit;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+
+
+  .right {
+    display: flex;
+    flex: 5;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 20px;
+    // .textfield-label{
+    //   color: white !important;
+    // }
+    // .css-1x51dt5-MuiInputBase-input-MuiInput-input{
+    //   color: white;
+    // }
+  }
+}
+
+.title {
+  font-family: "Roboto Mono";
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    flex-direction: column;
+  }
+}

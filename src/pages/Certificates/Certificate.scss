@@ -1,0 +1,61 @@
+.certificate {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  .left {
+    flex: 2;
+    background: black;
+  }
+  .center {
+    flex: 10;
+    background: black;
+
+    .title {
+      color: lightgray;
+      font-family: "Source Code Pro", monospace;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .page-content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+      gap: 6px;
+      font-family: var(--font-sans);
+
+      .img {
+        // background: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 15px;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        .cerimg {
+          width: 400px;
+        }
+      }
+    }
+
+    
+  }
+
+  .right {
+    flex: 1;
+    background: black;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .left{
+    display: none;
+  }
+  .cerimg {
+    width: 250px !important;
+  }
+}

@@ -1,0 +1,76 @@
+.sidebar {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+
+  .top-pane {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 100%;
+    background: linear-gradient(
+      159deg,
+      #404047 0%,
+      rgba(35, 35, 45, 0.98) 100%
+    );
+    justify-content: center;
+    align-items: center;
+
+    .name {
+      color: whitesmoke;
+      margin-top: 7px;
+    }
+    .designation {
+      color: #67676b;
+      margin-top: 8px;
+    }
+  }
+
+  .bottom-pane {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+    .skills {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 0 15px;
+    }
+
+    .lang {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .cv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: gray;
+      margin-top: 3rem;
+      cursor: pointer;
+      gap: 0.5rem;
+    }
+  }
+
+  .social {
+    display: flex;
+    height: 10vh;
+    background: linear-gradient(
+      159deg,
+      #404047 0%,
+      rgba(35, 35, 45, 0.98) 100%
+    );
+    color: gray;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}
