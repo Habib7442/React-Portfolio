@@ -1,9 +1,7 @@
-import GitHub from "@mui/icons-material/GitHub";
 import React, { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Git from "./components/Github/Git";
-import Stars from "./components/Stars/Stars";
 import { db } from "./firebase";
 import AllReviews from "./pages/AllReviews/AllReviews";
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -49,13 +47,20 @@ const router = createBrowserRouter([
     path: "/git",
     element: <Git />,
   },
-  
 ]);
 
 const App = () => {
   return (
     <>
-      <Suspense fallback={<h2>Loading...</h2>}>
+      <Suspense
+        fallback={
+          <div className="loader">
+            <div className="dot"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
+          </div>
+        }
+      >
         <RouterProvider router={router} />
       </Suspense>
     </>

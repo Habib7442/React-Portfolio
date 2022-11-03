@@ -13,7 +13,7 @@ const Carousels = () => {
     <div>
       <Carousel activeIndex={index} onSelect={handleSelect}>
         {projectData.map((data) => (
-          <Carousel.Item>
+          <Carousel.Item key={data.id}>
             <img
               className="d-block w-100"
               src={data.img}

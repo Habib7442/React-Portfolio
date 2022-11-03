@@ -20,9 +20,9 @@ const Home = () => {
           <section className="first-section">
             <main id="swup" className="first-section-main transition-fade">
               <h1 className="title">Explore My Work Space</h1>
-              <Button variant="contained" color="secondary">
+              {/* <Button variant="contained" color="secondary">
                 EXPLORE
-              </Button>
+              </Button> */}
             </main>
           </section>
           <section className="second-section">
@@ -155,9 +155,12 @@ const Home = () => {
           </section>
           <section className="fourth-section">
             <h2 className="testTitle">Testimonial</h2>
-            <div className="review d-flex flex-wrap" data-aos="flip-down">
-              <Review />
+            <div className="marquee">
+              <div className="review d-flex flex-wrap" data-aos="flip-down">
+                <Review />
+              </div>
             </div>
+
             <div className="linkToProject">
               <Link to="/all-reviews">
                 <span style={{ color: "lightgray" }}>All Reviews</span>

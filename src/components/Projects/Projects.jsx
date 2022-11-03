@@ -23,7 +23,7 @@ const Projects = () => {
         className="mySwiper"
       >
         {projectData.slice(0,3).map((data) => (
-          <SwiperSlide>
+          <SwiperSlide key={data.id}>
             <div className="slide-content">{data.title}</div>
           </SwiperSlide>
         ))}

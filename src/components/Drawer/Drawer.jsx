@@ -96,7 +96,7 @@ export default function SwipeableTemporaryDrawer() {
       {[""].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>
-            <LunchDiningIcon />
+            <LunchDiningIcon /> <strong>Click Me!</strong>
             {anchor}
           </Button>
           <SwipeableDrawer

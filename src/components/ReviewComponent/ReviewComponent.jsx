@@ -64,13 +64,13 @@ const ReviewComponent = (props) => {
           <Card className="cardBack">
             <Card.Body className="cardBody">
               {props.review.length > 30 && (
-                <Card.Text className="cardText" style={{ textAlign: "center" }}>
-                  {props.review.slice(0, 28)}
+                <Card.Text style={{ textAlign: "center",cursor: "pointer" }}>
+                  {props.review.slice(0, 18)}
                   {dot}
                 </Card.Text>
               )}
               {props.review.length < 30 && (
-                <Card.Text style={{ textAlign: "center" }}>
+                <Card.Text style={{ textAlign: "center",cursor: "pointer" }}>
                   {props.review.slice(0, 28)}
                 </Card.Text>
               )}
@@ -93,9 +93,6 @@ const ReviewComponent = (props) => {
               <Card.Text style={{ textAlign: "center" }}>
                 {props.name}
               </Card.Text>
-
-              {/* <Card.Link href="#">Card Link</Card.Link> */}
-              {/* <Card.Link href="#">Another Link</Card.Link> */}
             </Card.Body>
           </Card>
         </a>

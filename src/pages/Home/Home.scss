@@ -298,24 +298,24 @@
       }
     }
 
-    .git-section{
+    .git-section {
       width: 100%;
       display: flex;
       flex-direction: column;
 
-      .gitTitle{
+      .gitTitle {
         color: lightgray;
         font-family: "Source Code Pro", monospace;
         text-align: center;
         margin-top: 4rem;
       }
 
-      .gitImgDiv{
+      .gitImgDiv {
         display: flex;
         align-items: center;
         justify-content: center;
 
-        .gitImg{
+        .gitImg {
           width: 200px;
         }
       }
@@ -329,8 +329,21 @@
         text-align: center;
         margin-top: 4rem;
       }
-      .review {
-        margin-top: 2rem;
+      .marquee {
+        &:hover {
+          animation-play-state: paused;
+        }
+        .review {
+          margin-top: 2rem;
+        }
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
       }
     }
   }
@@ -387,7 +400,6 @@ ul {
               top: 10.5px !important;
               left: 23px !important;
             }
-
           }
           .mobile {
             margin-left: 13rem;
@@ -403,14 +415,13 @@ ul {
               top: 35.5px !important;
               left: 23px !important;
             }
-
           }
         }
       }
     }
 
-    .git-section{
-      .gitDiv{
+    .git-section {
+      .gitDiv {
         display: none;
       }
     }
@@ -426,12 +437,10 @@ ul {
   }
 }
 
-
 //footer
 
-.footer{
+.footer {
   width: 100%;
   height: 100%;
   background: black;
-
 }

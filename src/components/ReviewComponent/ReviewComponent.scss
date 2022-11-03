@@ -1,10 +1,11 @@
 .card {
   width: 200px;
-  height: 45vh;
+  height: 52vh;
   background: url("../../assets/cardimg.jpg"), no-repeat;
   background-size: cover;
   padding: 10px;
-
+  overflow: scroll;
+  
   .cardBody {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(4px);
